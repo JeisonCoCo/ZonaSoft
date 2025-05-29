@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario - ZonaSoft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #fff;
+          color: #333;
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #c0c7ca;
+          padding: 10px 20px;
+          border-radius: 0 0 10px 10px;
+        }
+
+        .header h1 {
+          margin: 0;
+          font-size: 20px;
+        }
+
+        .icons {
+          display: flex;
+          gap: 10px;
+        }
+
+        .icons i {
+          font-size: 18px;
+          background: #000;
+          color: #fff;
+          padding: 5px;
+          border-radius: 50%;
+        }
+
+        .container {
+          display: flex;
+          height: calc(100vh - 60px);
+        }
+
+        .sidebar {
+          background-color: #2ecc71;
+          color: white;
+          padding: 20px;
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+        }
+
+        .sidebar img {
+          width: 100px;
+          border-radius: 50%;
+        }
+
+        .sidebar h2, .sidebar p {
+          text-align: center;
+          margin: 10px 0;
+        }
+
+        .sidebar .btn {
+          margin: 5px 0;
+          padding: 10px;
+          background-color: #27ae60;
+          border: none;
+          border-radius: 10px;
+          color: white;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          font-size: 14px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .content {
+          flex: 1;
+          padding: 40px;
+          position: relative;
+        }
+
+        .zonasoft-logo {
+          position: absolute;
+          bottom: 40px;
+          right: 40px;
+          opacity: 0.1;
+          font-size: 48px;
+          font-weight: bold;
+        }
+
+        .section-card {
+          background-color: #f4f4f4;
+          border-radius: 10px;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Inventario</h1>
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <i class="fas fa-sign-out-alt"></i>
+        <i class="fas fa-user"></i>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Admin" />
+        <h2>Jeison Cordoba Cossio</h2>
+        <p>jeisonsmit@gmail.com</p>
+        <strong>Administrador</strong>
+
+        <button class="btn"><i class="fas fa-right-left"></i>Entradas y Salidas</button>
+        <button class="btn" style="background-color: #bdc3c7;">Existencia actual</button>
+        <button class="btn" style="background-color: #95a5a6;">Proveedores</button>
+        <button class="btn" style="background-color: #27ae60;">Reportes</button>
+        <button class="btn" style="background-color: #2ecc71;">Configuración</button>
+    </div>
+
+    <div class="content">
+        <div class="section-card">
+            <h3>Traslados</h3>
+            <p>Ingrese código, 0 + enter</p>
+            <p>Bodega destino</p>
+        </div>
+
+        <div class="section-card">
+            <h3>Ingresos</h3>
+            <p>Ingrese NIT del proveedor</p>
+            <p>Ingrese código, 0 + enter</p>
+        </div>
+
+        <div class="section-card">
+            <h3>Salidas</h3>
+            <p>Ingrese NIT del proveedor</p>
+            <p>Ingrese cantidad</p>
+        </div>
+
+        <div class="zonasoft-logo">ZONASOFT</div>
+    </div>
+</div>
+</body>
+</html>
